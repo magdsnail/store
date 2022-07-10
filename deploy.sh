@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-yarn docs:build
+npm run docs:build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
@@ -17,3 +17,4 @@ git commit -m 'deploy'
 git push -f git@github.com:magdsnail/store.git master:gh-pages
 
 cd -
+rm -rf dist
