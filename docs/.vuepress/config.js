@@ -41,5 +41,5 @@ module.exports = {
       lang: 'zh-CN'
     }
   },
-  base: '/store/'
+  base: '/'
 }
