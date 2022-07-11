@@ -29,7 +29,8 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           { title: "睡了吗", path: "/handbook/aaa" },
-          { title: "睡了", path: "/handbook/bbb" }
+          { title: "睡了", path: "/handbook/bbb" },
+          { title: "睡什么 起来嗨", path: "/handbook/yaml" },
         ],
       }
     ]
