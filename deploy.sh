@@ -9,15 +9,8 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-if [ -z "$ACCESS_TOKEN" ]; then
-  msg='deploy manually'
-  githubUrl=git@github.com:magdsnail/store.git
-else
-  msg='github actions'
-  githubUrl=https://magdsnail:${ACCESS_TOKEN}@github.com/magdsnail/store.git
-  git config --global user.name "jason.wang"
-  git config --global user.email "wangkjimgmail.com"
-fi
+git config --global user.email "wangkjimgmail.com"
+git config --global user.name "jason.wang"
 
 git init
 git add -A
