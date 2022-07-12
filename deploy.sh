@@ -15,8 +15,8 @@ if [ -z "$ACCESS_TOKEN" ]; then
 else
   msg='github actions'
   githubUrl=https://magdsnail:${ACCESS_TOKEN}@github.com/magdsnail/store.git
-  git config --global user.name "ccbean"
-  git config --global user.email "liuyh940@gmail.com"
+  git config --global user.name "jason.wang"
+  git config --global user.email "wangkjimgmail.com"
 fi
 
 git init
