@@ -11,16 +11,13 @@ cd docs/.vuepress/dist
 
 git config --global user.email "wangkjimgmail.com"
 git config --global user.name "jason.wang"
-githubUrl=https://github.com/magdsnail/store.git
-
-
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f $githubUrl master:gh-pages
+git push -f https://magdsnail@${ACCESS_TOKEN}:github.com/magdsnail/store.git master:gh-pages
 
 cd -
 rm -rf dist
