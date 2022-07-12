@@ -9,7 +9,7 @@ cd docs/.vuepress/dist
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy manually'
-  githubUrl=git@github.com:ccbeango/blog.git
+  githubUrl=git@github.com:magdsnail/store.git
 else
   msg='github actions'
   githubUrl=https://ccbeango:${GITHUB_TOKEN}@github.com/magdsnail/store.git
