@@ -15,7 +15,7 @@ echo ${GITHUB_TOKEN}
 
 echo "======================"
   msg='github actions'
-  githubUrl=https://ccbeango:${GITHUB_TOKEN}@github.com/magdsnail/store.git
+  githubUrl=https://magdsnail:${GITHUB_TOKEN}@github.com/magdsnail/store.git
   git config --global user.name "jason.wang"
   git config --global user.email "wangkjim@gmail.com"
 # fi
