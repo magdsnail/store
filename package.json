@@ -6,9 +6,9 @@
   "author": "jason.wang <wangkjim@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deployment": "bash deploy.sh"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "^1.9.7"

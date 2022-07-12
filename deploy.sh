@@ -3,21 +3,23 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-# 生成静态文件
-npm run docs:build
+npm run build
 
-# 进入生成的文件夹
 cd docs/.vuepress/dist
 
-git config --global user.email "wangkjimgmail.com"
-git config --global user.name "jason.wang"
-
+if [ -z "$GITHUB_TOKEN" ]; then
+  msg='deploy manually'
+  githubUrl=git@github.com:ccbeango/blog.git
+else
+  msg='github actions'
+  githubUrl=https://ccbeango:${GITHUB_TOKEN}@github.com/magdsnail/store.git
+  git config --global user.name "jason.wang"
+  git config --global user.email "wangkjim@gmail.com"
+fi
 git init
 git add -A
-git commit -m 'deploy'
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://magdsnail@${ACCESS_TOKEN}:github.com/magdsnail/store.git master:gh-pages
+git commit -m "${msg}"
+git push -f $githubUrl master:gh-pages
 
 cd -
-rm -rf dist
+rm -rf docs/.vuepress/dist
