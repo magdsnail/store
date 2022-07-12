@@ -11,9 +11,6 @@ if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy manually'
   githubUrl=git@github.com:magdsnail/store.git
 else
-# echo ${GITHUB_TOKEN}
-
-# echo "======================"
   msg='github actions'
   githubUrl=https://magdsnail:${GITHUB_TOKEN}@github.com/magdsnail/store.git
   git config --global user.name "jason.wang"
