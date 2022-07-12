@@ -16,6 +16,8 @@ else
   git config --global user.name "jason.wang"
   git config --global user.email "wangkjim@gmail.com"
 fi
+git config --global user.name "jason.wang"
+git config --global user.email "wangkjim@gmail.com"
 git init
 git add -A
 git commit -m "${msg}"
