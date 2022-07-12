@@ -7,18 +7,18 @@ npm run build
 
 cd docs/.vuepress/dist
 
-# if [ -z "$GITHUB_TOKEN" ]; then
-#   msg='deploy manually'
-#   githubUrl=git@github.com:magdsnail/store.git
-# else
-echo ${GITHUB_TOKEN}
+if [ -z "$GITHUB_TOKEN" ]; then
+  msg='deploy manually'
+  githubUrl=git@github.com:magdsnail/store.git
+else
+# echo ${GITHUB_TOKEN}
 
-echo "======================"
+# echo "======================"
   msg='github actions'
   githubUrl=https://magdsnail:${GITHUB_TOKEN}@github.com/magdsnail/store.git
   git config --global user.name "jason.wang"
   git config --global user.email "wangkjim@gmail.com"
-# fi
+fi
 git config --global user.name "jason.wang"
 git config --global user.email "wangkjim@gmail.com"
 git init
