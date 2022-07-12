@@ -9,10 +9,11 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-githubUrl=https://magdsnail:${GITHUB_TOKEN}@github.com/magdsnail/store.git
-
 git config --global user.email "wangkjimgmail.com"
 git config --global user.name "jason.wang"
+githubUrl=https://github.com/magdsnail/store.git
+
+
 
 git init
 git add -A
