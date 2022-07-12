@@ -2,7 +2,7 @@ name: deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   TZ: Asia/Shanghai
