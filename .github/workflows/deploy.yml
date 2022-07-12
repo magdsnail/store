@@ -25,4 +25,5 @@ jobs:
       - name: deployment
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: npm install && npm run deploy
+        run: |
+          npm install && npm run deployment
