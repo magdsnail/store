@@ -12,7 +12,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github action的自动部署'
   githubUrl=https://magdsnail:${GITHUB_TOKEN}@github.com/magdsnail/store.git
-  git config --global user.name "jason.wang"
+  git config --global user.name "wangkejing"
   git config --global user.email "wangkjim@gmail.com"
 fi
 git init
